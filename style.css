@@ -1,0 +1,48 @@
+* /* good to always set default. control the start first */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial", san-serif;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section .main {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .main .searchBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+section .main .searchBox .search
+{
+    width: 100%;
+    padding: 13px;
+    border-radius: 30px;
+    border: 1px solid black;
+    outline: none;
+}
+
+#icons
+{
+    position : absolute;
+    top: 0;
+}
+#google
+{
+    padding-top: 109px;
+}
