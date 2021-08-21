@@ -13,17 +13,35 @@ section
 }
 
 section .main {
-    width: 580px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+section .headernav {
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+
+section header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
 section .main .searchBox
 {
     position: relative;
-    width: 100%;
+    width: 35%;
     margin-top: 20px;
     
 }
@@ -33,16 +51,40 @@ section .main .searchBox .search
     width: 100%;
     padding: 13px;
     border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     border: 1px solid black;
     outline: none;
 }
 
-#icons
+section .main .searchBox .icon
 {
     position : absolute;
     top: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px 11px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
 }
+
+section .main .buttons
+{
+    margin-top: 20px;
+}
+
+section .main .buttons button 
+{
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+
+}
+
+
 #google
 {
-    padding-top: 109px;
+    padding-top: 200px;
 }
